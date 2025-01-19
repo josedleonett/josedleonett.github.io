@@ -12,7 +12,7 @@
     margin: 15px;
     border: #ccc 3px solid;
     width: 100px;
-    height: 100px;
+    height: auto;
 }
 
 blockquote {
