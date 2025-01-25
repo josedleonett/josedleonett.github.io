@@ -51,10 +51,6 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
 .hero {
     position: relative;
     width: 100%;
