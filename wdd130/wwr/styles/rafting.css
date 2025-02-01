@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0e4d84;
-    --secondary-color: #d56d22;
+    --secondary-color: #ea7724;
     --accent1-color: #c4d9eb;
     --accent2-color: #f2e4b3;
     --heading-font-family: "Fugaz One", serif;
@@ -155,14 +155,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr 0.1fr;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 3em;
     text-align: center;
     font-size: 0.9rem;
 }
 
 footer p {
-    color: white;
+    color: var(--accent1-color);
     margin: 0.5em 0;
 }
 
