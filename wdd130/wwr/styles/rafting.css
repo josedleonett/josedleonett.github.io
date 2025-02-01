@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
-p, a, li, span, button {
+p, a, li, span, button figure, figcaption {
     color: var(--primary-color);
     font-family: var(--text-font-family);
     font-weight: 100;
@@ -30,10 +30,11 @@ p, a, li, span, button {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
     align-items: center;
-    padding: 5px 50px;
+    justify-items: center;
+    width: 100%;
     background-color: var(--primary-color);
 }
 
@@ -42,10 +43,15 @@ header img {
     height: auto;
 }
 
+nav {
+    display: flex;
+    width: 100%;
+}
+
 nav a {
+    width: 100%;
     text-decoration: none;
     color: white;
-    margin: 0 1em;
     font-weight: bold;
 }
 
@@ -64,7 +70,7 @@ nav a {
     position: absolute;
     top: 10%;
     left: 50%;
-    width: 100%;
+    width: 100vw;
     transform: translateX(-50%);
     color: white;
     background-color: rgba(14, 77, 132, 0.5);
@@ -97,19 +103,45 @@ nav a {
 }
 
 section {
-    margin: 2em 1em;
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0em;
+    padding: 1em 5em;
+    background-color: var(--accent1-color);
 }
 
-section img {
-    width: calc(20% - 10px);
-    margin: 5px;
-    border-radius: 4px;
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    align-items: center;
     background-color: var(--secondary-color);
-    padding: 1em;
+    padding: 3em;
     text-align: center;
     color: white;
     font-size: 0.9rem;
