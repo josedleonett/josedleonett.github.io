@@ -115,13 +115,14 @@ section {
 .history-container {
     display: grid;
     align-items: start;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-columns: 1fr 0.5fr 1fr;
     gap: 1em;
     width: 100%;
 }
 
 .history-container img {
-    width: 100%;
+    max-width: 500px;
     height: 200px;
     object-fit: cover;
 }
