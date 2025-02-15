@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whitewater Rafting | Contact Us</title>
     <meta
@@ -26,7 +26,7 @@
     </header>
     <main>
       <section class="contact-section">
-        <h2>Contact Us!</h2>
+        <h1>Contact Us!</h1>
         <div class="contact-container">
           <div class="contact-info">
             <ul>
@@ -92,49 +92,53 @@
           </figure>
         </div>
       </section>
+
       <section class="contact-form-section">
         <h2>Send Us a Message</h2>
-        <form action="submit_form.php" method="post">
+        <form >
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your Name" />
           </div>
+          
           <div class="form-group">
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
           </div>
+          
           <div class="form-group">
             <p>Purpose of your message:</p>
             <div class="radio-group">
-              <label>
-                <input type="radio" name="purpose" value="General Inquiry" required />
+              <label for="purpose-general">
+                <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required />
                 General Inquiry
               </label>
-              <label>
-                <input type="radio" name="purpose" value="Reservation Question" />
+              <label for="purpose-reservation">
+                <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question" />
                 Reservation Question
               </label>
-              <label>
-                <input type="radio" name="purpose" value="Website Suggestion" />
+              <label for="purpose-website">
+                <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion" />
                 Website Suggestion
               </label>
             </div>
           </div>
+          
           <div class="form-group">
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
           </div>
+          
           <div class="form-group checkbox-group">
-            <label>
-              <input type="checkbox" name="newsletter" />
-              Please subscribe me to the monthly newsletter
-            </label>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
           </div>
+          
           <div class="form-group">
-            <button type="submit" class="submit-button">Send Message</button>
+            <button type="submit" id="submit-button" class="submit-button">Send Message</button>
           </div>
         </form>
-      </section> 
+      </section>      
     </main>    
     <footer>
       <p>copyright &copy; 2025 Whitewater Rafting, Jose D. Leonett</p>
