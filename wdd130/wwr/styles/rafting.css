@@ -78,7 +78,7 @@
     transform: translateX(-50%);
     color: white;
     background-color: rgba(14, 77, 132, 0.5);
-    padding: 0.5em 1em;
+    padding: 0.5em 0px;
     font-size: 2.5rem;
     text-align: center;
   }
@@ -87,7 +87,7 @@
     position: absolute;
     top: 40%;
     left: 50%;
-    width: 80%;
+    width: 40%;
     transform: translate(-50%, -40%);
     padding: 1em;
     background-color: rgba(14, 77, 132, 0.5);
@@ -312,7 +312,7 @@
     font-size: 0.9rem;
   }
   
-  footer p {
+  footer p a {
     color: var(--accent1-color);
     margin: 0.5em 0;
   }
@@ -334,18 +334,16 @@
     transform: translateX(-50%);
     color: white;
     background-color: rgba(14, 77, 132, 0.5);
-    padding: 0.5em 1em;
+    padding: 0.5em 0px;
     font-size: 2.5rem;
     text-align: center;
   }
-/* aplicar estos stilos a la sección de la página de inicio index.html solamente */
+
   .hero-section {
     padding: 0px;
     margin: 0px;
   }
-  /* Estilos exclusivos para la Home Page */
 
-/* Contenedor para Newsletter y CTA en dos columnas */
 .home-highlights {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -354,7 +352,6 @@
     margin: 2em 0;
   }
   
-  /* Newsletter Signup */
   .newsletter-signup {
     background-color: var(--accent2-color);
     padding: 2em;
@@ -387,7 +384,6 @@
     font-size: 1rem;
   }
   
-  /* Call-to-Action (CTA) */
   .cta {
     padding: 2em;
     text-align: center;
@@ -418,7 +414,6 @@
     background-color: var(--secondary-color);
   }
   
-  /* Sección Grid para contenido adicional */
   .grid-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -438,7 +433,6 @@
     border-radius: 10px;
   }
   
-  /* Pie de página */
   footer {
     display: grid;
     grid-template-columns: 1fr 0.1fr;
@@ -464,7 +458,6 @@
     height: auto;
   }
   
-  /* Botón común */
   .submit-button {
     background-color: var(--primary-color);
     color: #fff;
@@ -479,5 +472,73 @@
   .submit-button:hover {
     background-color: var(--secondary-color);
   }
-  
 
+  .trips-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    padding: 2em 5%;
+    background-color: var(--accent1-color);
+  }
+  
+  .trip-description {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trip-description img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .trip-info {
+    padding: 1em;
+    flex: 1;
+  }
+  
+  .trip-info h3 {
+    margin-top: 0;
+  }
+  
+  .trip-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .trip-info .button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .trip-info .button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .trip-table {
+    width: 90%;
+    margin: 2em auto;
+    border-collapse: collapse;
+  }
+  
+  .trip-table th,
+  .trip-table td {
+    border: 1px solid var(--primary-color);
+    padding: 0.75em;
+    text-align: center;
+  }
+  
+  .trip-table th {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+  } 
