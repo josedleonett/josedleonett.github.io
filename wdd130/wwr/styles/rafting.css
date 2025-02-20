@@ -58,6 +58,10 @@
     color: white;
     font-weight: bold;
   }
+
+  .hidden {
+    display: none;
+  }  
   
   .hero {
     position: relative;
@@ -166,9 +170,12 @@
     margin-top: 10px;
   }
   
-  .image-gallery figure p {
+  .image-gallery figure .employee-description {
     font-size: 14px;
     color: #666;
+    font-family: var(--text-font-family);
+    font-weight: 100;
+    font-style: normal;
   }
   
   .contact-section {
@@ -479,6 +486,7 @@
     gap: 2em;
     padding: 2em 5%;
     background-color: var(--accent1-color);
+    width: 100%;
   }
   
   .trip-description {
